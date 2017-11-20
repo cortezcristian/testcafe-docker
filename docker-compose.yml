@@ -2,7 +2,7 @@ version: '3'
 
 services:
   testcafe:
-    container_name: testcafe
+    container_name: testcafe_${BROWSER}
     image: testcafe/testcafe
     environment:
       - NODE_PATH=/opt/testcafe/node_modules:/opt
@@ -11,4 +11,4 @@ services:
     volumes:
     - ./tests:/tests
     - ./screenshots:/screenshots
-    entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "chromium --no-sandbox", "-S", "-s", "screenshots", "/tests"]
+    entrypoint: ["/opt/testcafe/docker/testcafe-docker.sh", "${BROWSER} --no-sandbox", "-S", "-s", "screenshots", "/tests"]

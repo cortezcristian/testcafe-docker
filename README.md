@@ -2,4 +2,10 @@
 
 > Dockerized testcafe project
 
-Run `docker-compose up -d` to start the docker container and run the tests
+### Run in chrome
+
+`BROWSER=chromium docker-compose up -d`
+
+### Run in firefox
+
+`BROWSER=firefox docker-compose up -d`
