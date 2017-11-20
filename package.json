@@ -1,0 +1,14 @@
+{
+  "name": "testcafe-docker",
+  "version": "1.0.0",
+  "description": "Dockerrized Testcafe Project",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "start:chrome": "testcafe chrome tests"
+  },
+  "author": "Achim Rolle",
+  "license": "ISC"
+}
