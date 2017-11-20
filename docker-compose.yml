@@ -6,6 +6,8 @@ services:
     image: testcafe/testcafe
     environment:
       - NODE_PATH=/opt/testcafe/node_modules:/opt
+      - SCREEN_WIDTH=1920
+      - SCREEN_HEIGHT=1080
     volumes:
     - ./tests:/tests
     - ./screenshots:/screenshots

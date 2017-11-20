@@ -7,7 +7,8 @@
     "test": "tests"
   },
   "scripts": {
-    "start:chrome": "testcafe chrome tests"
+    "start:chrome": "testcafe chrome tests -S -s screenshots",
+    "start:firefox": "testcafe firefox tests -S -s screenshots"
   },
   "author": "Achim Rolle",
   "license": "ISC"
